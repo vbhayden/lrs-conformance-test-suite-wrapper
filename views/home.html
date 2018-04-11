@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>LRS Conformance Suite</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="/public/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Page-Specific CSS -->
+    <link href="/views/css/home.css" rel="stylesheet">
+    <link href="/views/css/footer.css" rel="stylesheet">
+    <link href="/views/css/carousel.css" rel="stylesheet">
+    <link href="/views/css/setup.css" rel="stylesheet">
+    <link href="/views/css/test-selection.css" rel="stylesheet">
+    <link href="/views/css/progress.css" rel="stylesheet">
+    <link href="/views/css/results.css" rel="stylesheet">
+    <link href="/views/css/fireworks.css" rel="stylesheet">
+
+</head>
+<body>
+
+    {{header.html}}
+
+    <main role="main" class="main">
+        <div id="myCarousel" class="carousel slide" data-interval="false" >
+
+            <ol class="carousel-indicators">
+                <li data-target="#myCarousel" data-slide-to="0" class="active" id="slide-to-setup" ></li>
+                <li data-target="#myCarousel" data-slide-to="1" class="" id="slide-to-test-selection"></li>
+                <li data-target="#myCarousel" data-slide-to="2" class="" id="slide-to-progress"></li>
+                <li data-target="#myCarousel" data-slide-to="3" class="" id="slide-to-results"></li>
+            </ol>
+
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+
+                    {{setup.html}}
+
+                </div>
+                <div class="carousel-item">
+
+                    {{test-selection.html}}
+
+                </div>
+                <div class="carousel-item">
+
+                    {{progress.html}}
+
+                </div>
+                <div class="carousel-item">
+
+                    {{results.html}}
+
+                </div>
+            </div>
+
+            <a id="carousel-prev" class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a id="carousel-next" class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+
+        </div>
+    </main>
+
+    {{footer.html}}
+
+    <!-- Bootstrap core JavaScript and other dependencies -->
+    <script src="/public/js/jquery-1.9.1.js"></script>
+    <script src="https://getbootstrap.com/assets/js/vendor/popper.min.js"></script>
+    <script src="https://getbootstrap.com/dist/js/bootstrap.min.js"></script>
+
+    <!-- Scripts for functionality on the page -->
+    <script src="/scripts/browser/utils.js"></script>
+    <script src="/scripts/browser/footer.js"></script>
+    <script src="/scripts/browser/carousel-interactions.js"></script>
+    <script src="/scripts/browser/setup.js"></script>
+    <script src="/scripts/browser/test-selection.js"></script>
+    <script src="/scripts/browser/progress.js"></script>
+    <script src="/scripts/browser/results.js"></script>
+    <script src="/scripts/browser/fireworks.js"></script>
+
+    <svg xmlns="http://www.w3.org/2000/svg" width="500" height="500"
+        viewBox="0 0 500 500" preserveAspectRatio="none"
+        style="display: none; visibility: hidden; position: absolute; top: -100%; left: -100%;">
+        <defs>
+            <style type="text/css"></style>
+        </defs>
+        <text x="0" y="25" style="font-weight:bold;font-size:25pt;font-family:Arial, Helvetica, Open Sans, sans-serif">
+            500x500
+        </text>
+    </svg>
+</body>
+</html>

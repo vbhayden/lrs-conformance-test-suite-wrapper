@@ -1,0 +1,65 @@
+.placeholder-image {
+    height: 30rem;
+}
+
+.btn-primary:not(:disabled):not(.disabled).active,
+.btn-primary:not(:disabled):not(.disabled):active,
+.show>.btn-primary.dropdown-toggle
+{
+    background-color: #44aa66;
+    border-color: #66cc77;
+}
+
+.btn-run:not(:disabled):not(.disabled).active,
+.btn-run:not(:disabled):not(.disabled):active.hover,
+.show>.btn-primary.dropdown-toggle
+{
+    background-color: #44aa66;
+    border-color: #66cc77;
+}
+
+.btn-run {
+    background-color: #44aa66;
+    border-color: #66cc77;
+}
+
+.toggle-large {
+    color: #fff;
+    background-color: #333333;
+    border-color: #222222;
+}
+
+input[type=checkbox] {
+    display: none;
+}
+
+.btn-section {
+    height: 8ex;
+    width: 25%;
+}
+
+.btn-section-double {
+    height: 8ex;
+    width: 50%;
+}
+
+.btn-fullscreen {
+    height: 8ex;
+    width: 75%;
+}
+
+.test-header-gap {
+    height: 1ex;
+    width: 100%;
+}
+.test-header {
+    height: 100%;
+    width: 15%;
+    text-align: left;
+    line-height: normal;
+}
+
+.test-row {
+    width: 100%;
+    height: 100%;
+}

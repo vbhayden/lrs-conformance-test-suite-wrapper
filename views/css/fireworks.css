@@ -1,0 +1,70 @@
+/*
+HTML5 / JQuery fireworks by Jack Rugile.  Unmodified version at:
+https://codepen.io/jackrugile/pen/acAgx
+*/
+
+a {
+	color: #2fa1d6;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #fff;
+}
+
+#canvas-container {
+	background: #000 url(https://jackrugile.com/lab/fireworks-v2/images/bg.jpg);
+	position: absolute;
+	height: 100%;
+    width: 100%;
+	z-index: 2;
+}
+
+canvas {
+	cursor: crosshair;
+	display: block;
+	position: relative;
+	z-index: 3;
+}
+
+canvas:active {
+	cursor: crosshair;
+}
+
+#skyline {
+	background: url(https://jackrugile.com/lab/fireworks-v2/images/skyline.png) repeat-x 50% 0;
+	bottom: 0;
+	height: 135px;
+	left: 0;
+	position: absolute;
+	width: 100%;
+	z-index: 1;
+}
+
+#mountains1 {
+	background: url(https://jackrugile.com/lab/fireworks-v2/images/mountains1.png) repeat-x 40% 0;
+	bottom: 0;
+	height: 200px;
+	left: 0;
+	position: absolute;
+	width: 100%;
+	z-index: 1;
+}
+
+#mountains2 {
+	background: url(https://jackrugile.com/lab/fireworks-v2/images/mountains2.png) repeat-x 30% 0;
+	bottom: 0;
+	height: 250px;
+	left: 0;
+	position: absolute;
+	width: 100%;
+	z-index: 1;
+}
+
+#gui {
+	right: 0;
+	position: fixed;
+	top: 0;
+	z-index: 3;
+}

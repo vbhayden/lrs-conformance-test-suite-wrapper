@@ -1,0 +1,51 @@
+<div class="container">
+    <div class="text-center mb-4">
+
+        <h1 class="h3 mb-3 font-weight-normal">Test Results</h1>
+        <p id="logTitle">Each failure is listed below.</p>
+
+        <!-- Container for log entries. -->
+        <div class=log-container>
+            <div id="logTemplateContainer" class="log-scroll-container">
+
+                <!-- Templates will be fleshed out and added here -->
+
+            </div>
+        </div>
+
+        <!-- This will be a collapsed div that contains a single empty
+        log entry that will be the template for others -->
+        <div class="log-template-holder">
+
+            <div id="logTemplate" class="log-entry">
+
+                <!-- This button will collapse our text -->
+                <button class="log-toggle btn btn-danger" data-toggle="collapse" data-target="#demo">Error Details</button>
+
+                <!-- Top-Most title that this error belongs to -->
+                <h4 class="log-name">Test Requirements</h4>
+
+                <!-- Requirement given for this test happening in the first place -->
+                <p class="log-requirement">data.md#2.2.2.14</p>
+
+                <!-- Detail information on this test. -->
+                <div id="demo" class="collapse">
+
+                </div>
+
+            </div>
+        </div>
+
+        <!-- We'll just use the same style for these buttons as the progress page -->
+        <div class="result-list">
+
+            <div class="btn-group test-row" data-toggle="buttons">
+                <button id="btnReturnToTests" class="btn btn-primary btn-lg bg-info btn-progress">
+                    Return to Test Selection
+                </button>
+            </div>
+
+        </div>
+
+    </div>
+</div>

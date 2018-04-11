@@ -1,0 +1,42 @@
+.setup-loader-container {
+    position: relative;
+    align-content: center;
+    height: 100%;
+    /* display: none; */
+}
+
+.setup-loader-message {
+    position: absolute;
+    margin-left: 5rem;
+    height: 100%;
+    z-index: 10;
+}
+
+.setup-loader-message {
+    word-wrap: normal;
+}
+
+.setup-loader-icon {
+    position: absolute;
+
+    margin-top: 2px;
+
+    border-left: 10px solid #f3f3f3;
+    border-top: 10px solid #ff44aa;
+    border-right: 10px solid #aaff44;
+    border-bottom: 10px solid #44aaff;
+    height: 100%;
+    overflow: hidden;
+
+    animation: spin 2s linear infinite;
+}
+
+.footer-text {
+    color: #dddddd;
+    height: 100%;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}

@@ -1,0 +1,36 @@
+.progress-bar-big {
+    height: 10ex;
+}
+
+.result-list {
+    margin: auto;
+    width: 50%;
+    padding: 10px;
+}
+
+.result-entry {
+    position: relative;
+    margin: auto;
+    width: 50%;
+    padding: 10px;
+    height: 50px;
+}
+
+.result-label {
+    position: absolute;
+    text-align: center;
+    width: 50%;
+}
+
+.result-value {
+    position: absolute;
+    text-align: center;
+    margin-left: 50%;
+    width: 50%;
+}
+
+.btn-progress {
+    height: 5ex;
+    margin-top: 10px;
+    width: 100%;
+}

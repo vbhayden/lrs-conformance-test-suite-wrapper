@@ -1,0 +1,83 @@
+<div class="container">
+    <div class="text-center mb-4">
+
+        <!-- Standard header for these page -->
+        <h1 class="h3 mb-3 font-weight-normal">Test Selection</h1>
+
+        <p>
+            Select the tests you would like to run against the designated LRS.
+        </p>
+
+        <!-- Middle row to choose a subset of tests.  If all are chosen, then
+            this will run every test available. -->
+        <div class="btn-group test-row" data-toggle="buttons">
+            <h1 class="h3 mb-3 font-weight-normal test-header">Specifics</h1>
+
+            <!-- Data -->
+            <label class="btn btn-primary toggle-large btn-section">
+                <input id="checkData" type="checkbox" autocomplete="off">
+                    Data
+                </input>
+            </label>
+
+            <!-- Communication -->
+            <label class="btn btn-primary toggle-large btn-section">
+                <input id="checkCommunication" type="checkbox" autocomplete="off">
+                    Communication
+                </input>
+            </label>
+
+            <!-- Formatting -->
+            <label class="btn btn-primary toggle-large btn-section">
+                <input id="checkFormat" type="checkbox" autocomplete="off">
+                    Format
+                </input>
+            </label>
+        </div>
+        <div class="test-header-gap"></div>
+
+        <!-- Bottom row to run a regex match on the tests -->
+        <div class="btn-group test-row" data-toggle="buttons">
+            <h1 class="h3 mb-3 font-weight-normal test-header">Custom Regex</h1>
+
+            <!-- Whether or not we're using a regex match  -->
+
+            <label for="checkRegex" class="btn btn-primary toggle-large btn-section">
+                <input id="checkRegex" type="checkbox" autocomplete="off">
+                    Use Regex
+                </input>
+            </label>
+
+            <!-- The actual value of the regex string -->
+            <input id="inputRegex" class="form-control btn-section-double"/>
+        </div>
+
+        <!-- Additioanl fake row to have the tooltip underneat the regex entry box -->
+        <div class="btn-group test-row" data-toggle="buttons">
+            <h1 class="h3 mb-3 font-weight-normal test-header"> </h1>
+            <p class="btn-fullscreen">
+                Optional: Enter a regular expression.  The conformance suite will
+                run any tests matching this expression against your LRS.  This pattern will be used
+                in addition to any tests you have selected above.
+            </p>
+        </div>
+
+        <!-- The button to submit our test configuration -->
+        <div class="btn-group test-row" data-toggle="buttons">
+            <h1 class="h3 mb-3 font-weight-normal test-header"> </h1>
+            <button id="btnRunConfiguration" class="btn btn-primary btn-lg btn-fullscreen btn-run">
+                Run Test Configuration
+            </button>
+        </div>
+        <div class="test-header-gap"></div>
+
+        <!-- Lastly, the button to just run all available tests -->
+        <div class="btn-group test-row" data-toggle="buttons">
+            <h1 class="h3 mb-3 font-weight-normal test-header"> </h1>
+            <button id="btnRunAll" class="btn btn-primary btn-lg btn-fullscreen btn-run">
+                Run Entire Conformance Suite
+            </button>
+        </div>
+
+    </div>
+</div>

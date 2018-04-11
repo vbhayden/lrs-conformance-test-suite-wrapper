@@ -1,0 +1,61 @@
+<div class="container">
+    <div class="text-center mb-4">
+        <h1 class="h3 mb-3 font-weight-normal">Test Progress</h1>
+
+        <p>
+            This page will update as the conformance suite runs.
+        </p>
+
+        <!-- Bootstrap and html5 simplified progress bars by quite a bit -->
+        <div class="progress progress-bar-big">
+            <div class="progress-bar progress-bar-striped progress-bar-animated bg-info"
+            role="progressbar"
+            style="width: 50%" aria-valuenow="0.5" aria-valuemin="0" aria-valuemax="1"
+            id="progressBarPassed"></div>
+
+            <div class="progress-bar progress-bar-striped progress-bar-animated bg-danger"
+            role="progressbar"
+            style="width: 50%" aria-valuenow="0.5" aria-valuemin="0" aria-valuemax="1"
+            id="progressBarFailed"></div>
+        </div>
+
+        <!-- In addition to the progress bar, we'll have a few counters to monitor
+        how many tests have been done, failed, and remain -->
+        <div class="result-list">
+
+            <div class="result-entry">
+                <h3 class="result-label">Passed</h3>
+                <h3 class="result-value" id="countPassed">0</h3>
+            </div>
+
+            <div class="result-entry">
+                <h3 class="result-label">Failed</h3>
+                <h3 class="result-value" id="countFailed">0</h3>
+            </div>
+
+            <div class="result-entry">
+                <h3 class="result-label">Total</h3>
+                <h3 class="result-value" id="countTotal">10</h3>
+            </div>
+            <div class="result-button-gap"></div>
+
+            <!-- The button to submit our test configuration -->
+            <div class="btn-group test-row" data-toggle="buttons">
+                <button id="btnCancelTest" class="btn btn-primary btn-lg bg-danger  btn-progress">
+                    Cancel Tests
+                </button>
+            </div>
+            <div class="result-button-gap"></div>
+
+            <!-- Lastly, the button to just run all available tests -->
+            <div class="btn-group test-row" data-toggle="buttons">
+                <button id="btnViewResults" class="btn btn-primary btn-lg bg-info btn-progress">
+                    View Results
+                </button>
+            </div>
+
+        </div>
+
+
+    </div>
+</div>
