@@ -1,5 +1,7 @@
 # LRS Conformance Test Suite Wrapper
-This is a NodeJS server application to provide a GUI for interacting with ADL's LRS Conformance Suite.  This project is a wrapper for [ADL's LRS Conformance Test Suite](https://github.com/adlnet/lrs-conformance-test-suite), built to provide a sensible user interface for working with that suite when checking a given LRS's conformance.  
+This is a vanilla NodeJS server application to provide a GUI for interacting with ADL's LRS Conformance Suite.  Out of curiousity, this was written without a supplementary framework like Express.
+
+This project is a wrapper for [ADL's LRS Conformance Test Suite](https://github.com/adlnet/lrs-conformance-test-suite), built to provide a sensible user interface for working with that suite when checking a given LRS's conformance.  
 
 It uses the conformance suite's testing objects to select and run tests on the server side, with JQuery / AJAX polling to check the status of those tests.
 
